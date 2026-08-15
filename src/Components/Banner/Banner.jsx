@@ -1,4 +1,5 @@
 import BannerImage from "../../assets/banner.png";
+import Play from "../../assets/play.png";
 const Banner = () => {
   return (
     <div className="relative min-h-162.5 flex items-center overflow-hidden">
@@ -6,33 +7,31 @@ const Banner = () => {
         {/* Left Content */}
         <div className="space-y-4">
           <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium px-5 py-2 rounded-full">
-            ✨ Frontier AI Models
+            ✨ New: AI-Powered Tools Available
           </div>
 
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter text-red-600">
-            One Subscription.
+            Supercharge Your
             <br />
             <span className="bg-linear-to-r from-red-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
-              All the AIs You Need
+              Digital Workflow
             </span>
           </h1>
 
           <p className="text-lg text-zinc-700 max-w-lg">
-            Experience the full spectrum of frontier intelligence — all the most
-            advanced AI models, unified under a single, powerful subscription.
+            Access premium AI tools, design assets, templates, and productivity
+            software—all in one place. Start creating faster today. Explore
+            Products
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="bg-red-600 hover:bg-red-500 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-red-500/30 flex items-center gap-3 group text-white">
-              Get Unlimited Access
-              <span className="group-hover:translate-x-1 transition">→</span>
+            <button className="bg-blue-600 hover:bg-blue-500 transition-all px-8 py-4 rounded-full font-semibold text-lg shadow-xl shadow-blue-500/30 flex items-center gap-3 group text-white">
+              Explore Products
             </button>
-          </div>
-
-          <div className="flex items-center gap-8 text-sm text-zinc-600 pt-6">
-            <div>✓ 50+ Frontier Models</div>
-            <div>✓ No Usage Limits</div>
-            <div>✓ Cancel Anytime</div>
+            <button className="bg-white hover:bg-zinc-200 transition-all px-8 py-4 rounded-full font-semibold text-lg shadow-xl shadow-zinc-500/30 flex items-center gap-3 group text-zinc-800">
+              <img src={Play} alt="Play" className="w-5 h-5" />
+              Watch Demo
+            </button>
           </div>
         </div>
 
