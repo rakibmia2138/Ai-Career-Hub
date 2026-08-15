@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create ATS-friendly resumes with customizable templates and AI-powered suggestions.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ ATS templates",
+      "AI resume writing",
+      "Export to PDF",
+      "Unlimited edits"
+    ],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Cover Letter Generator",
+    "description": "Generate personalized cover letters tailored to any job description in seconds.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "AI-powered writing",
+      "Multiple tone options",
+      "Job-specific customization",
+      "One-click copy"
+    ],
+    "icon": "Mail"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website Builder",
+    "description": "Build a professional portfolio website without writing any code.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Responsive templates",
+      "Custom domain support",
+      "SEO optimization",
+      "Dark mode"
+    ],
+    "icon": "Globe"
+  },
+  {
+    "id": 4,
+    "name": "AI Interview Coach",
+    "description": "Practice mock interviews with instant AI feedback and performance analysis.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Mock interviews",
+      "Voice analysis",
+      "Behavioral questions",
+      "Performance reports"
+    ],
+    "icon": "MessageCircle"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Profile Optimizer",
+    "description": "Improve your LinkedIn profile to attract recruiters and increase visibility.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Headline optimization",
+      "About section rewrite",
+      "Keyword suggestions",
+      "Profile scoring"
+    ],
+    "icon": "Linkedin"
+  },
+  {
+    "id": 6,
+    "name": "Career Pro Suite",
+    "description": "Complete toolkit including resume builder, cover letters, interview prep, and portfolio hosting.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "All premium tools",
+      "Unlimited AI credits",
+      "Priority support",
+      "Free updates"
+    ],
+    "icon": "Briefcase"
+  },
+  {
+    "id": 7,
+    "name": "AI Job Tracker",
+    "description": "Organize job applications, interviews, and follow-ups in one dashboard.",
+    "price": 7,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Application tracking",
+      "Interview reminders",
+      "Company notes",
+      "Progress analytics"
+    ],
+    "icon": "KanbanSquare"
+  },
+  {
+    "id": 8,
+    "name": "Skill Assessment Kit",
+    "description": "Test your technical and soft skills with AI-generated assessments and reports.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Coding challenges",
+      "Aptitude tests",
+      "Detailed score report",
+      "Learning recommendations"
+    ],
+    "icon": "Brain"
+  }
+]
