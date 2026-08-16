@@ -1,7 +1,6 @@
-import React from "react";
 import { toast } from "react-toastify";
 const Cart = ({ cartItems, setCartItems, total, setTotal }) => {
-    console.log(total);
+  console.log(total);
   const handlePayment = () => {
     setCartItems([]);
     setTotal(0);
@@ -13,7 +12,7 @@ const Cart = ({ cartItems, setCartItems, total, setTotal }) => {
     toast.success("Item removed from cart!");
   };
   return (
-    <div className="p-10">
+    <div className="p-5">
       <h1 className="text-2xl font-bold text-center">Your Cart</h1>
       {cartItems.length === 0 ? (
         <p className="text-xl font-semibold text-center p-5">Cart is Empty</p>

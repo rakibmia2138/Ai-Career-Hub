@@ -7,6 +7,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Stats from "./Components/Stats/Stats";
 import Cart from "./Components/Cart/Cart";
 import Tab from "./Components/Main/Tab";
+import Steps from "./Components/Steps/Steps";
 
 const getProducts = async () => {
   const response = await fetch("./products.json");
@@ -45,6 +46,7 @@ function App() {
           setTotal={setTotal}
         ></Cart>
       )}
+      <Steps></Steps>
       <Footer></Footer>
     </>
   );

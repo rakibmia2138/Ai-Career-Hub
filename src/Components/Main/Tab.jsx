@@ -8,7 +8,7 @@ const Tab = ({ cartItems, setActiveTab }) => {
           designed to <br></br> boost your productivity and creativity.
         </p>
         {/* name of each tab group should be unique */}
-        <div className="tabs justify-center tabs-box">
+        <div className="tabs justify-center tabs-box bg-none border-none">
           <input
             type="radio"
             name="my_tabs_1"
