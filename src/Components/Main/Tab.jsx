@@ -1,4 +1,4 @@
-const Tab = ({ cartItems, setActiveTab }) => {
+const Tab = ({ cartItems, activeTab, setActiveTab }) => {
   return (
     <div>
       <div className="text-center py-20 px-4 space-y-4">
@@ -8,22 +8,17 @@ const Tab = ({ cartItems, setActiveTab }) => {
           designed to <br></br> boost your productivity and creativity.
         </p>
         {/* name of each tab group should be unique */}
-        <div className="tabs justify-center tabs-box bg-none border-none">
-          <input
-            type="radio"
-            name="my_tabs_1"
-            className="tab rounded-full w-40"
-            aria-label="Products"
-            defaultChecked
+        <div className="tabs justify-center gap-5">
+          <button
+            className={`btn ${activeTab === "products" ? "btn-primary" : ""} rounded-full w-40`}
             onClick={() => setActiveTab("products")}
-          />
-          <input
-            type="radio"
-            name="my_tabs_1"
-            className="tab rounded-full w-40"
-            aria-label={`Cart (${cartItems.length})`}
+          >
+            Products
+          </button>
+          <button
+            className={`btn ${activeTab === "cart" && "btn-primary"} rounded-full w-40`}
             onClick={() => setActiveTab("cart")}
-          />
+          >{`Cart (${cartItems.length})`}</button>
         </div>
       </div>
     </div>

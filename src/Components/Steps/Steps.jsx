@@ -9,7 +9,7 @@ const Steps = () => {
           Start using premium digital tools in minutes, not hours.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         <div className="card bg-base-100 w-96 shadow-sm relative">
           <button className="btn btn-circle btn-primary absolute top-2 right-6">01</button>
           <figure className="px-10 pt-15">

@@ -25,11 +25,12 @@ function App() {
   const data = use(promise);
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cartItems={cartItems}></Navbar>
       <Banner></Banner>
       <Stats></Stats>
       <Tab
         cartItems={cartItems}
+        activeTab={activeTab}
         setActiveTab={setActiveTab}
       ></Tab>
       {activeTab === "products" ? (

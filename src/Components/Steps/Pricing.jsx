@@ -2,14 +2,14 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="max-w-11/12 mx-auto my-5">
+    <div className="max-w-11/12 mx-auto pb-10">
       <div className="text-center py-20 px-4 space-y-4">
         <h2 className="text-3xl font-bold">Simple, Transparent Pricing</h2>
         <p className="text-small">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         <div className="card w-96 bg-base-100 shadow-sm">
           <div className="card-body">
             <div>
