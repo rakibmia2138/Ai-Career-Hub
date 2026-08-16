@@ -16,31 +16,35 @@ const getProducts = async () => {
 const promise = getProducts();
 
 function App() {
-  const [count, setCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);
   const [activeTab, setActiveTab] = useState("products");
+  const [total, setTotal] = useState(0);
   const data = use(promise);
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
       <Stats></Stats>
-      <Tab count={count} activeTab={activeTab} setActiveTab={setActiveTab}></Tab>
-      {
-        activeTab === "products" ? (
-          <Main
-            data={data}
-            count={count}
-            setCount={setCount}
-            cartItems={cartItems}
-            setCartItems={setCartItems}
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-          ></Main>
-        ) : (
-          <Cart count={count} cartItems={cartItems}></Cart>
-        )
-      }
+      <Tab
+        cartItems={cartItems}
+        setActiveTab={setActiveTab}
+      ></Tab>
+      {activeTab === "products" ? (
+        <Main
+          data={data}
+          total={total}
+          setTotal={setTotal}
+          cartItems={cartItems}
+          setCartItems={setCartItems}
+        ></Main>
+      ) : (
+        <Cart
+          cartItems={cartItems}
+          setCartItems={setCartItems}
+          total={total}
+          setTotal={setTotal}
+        ></Cart>
+      )}
       <Footer></Footer>
     </>
   );

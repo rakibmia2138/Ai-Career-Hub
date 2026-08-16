@@ -13,7 +13,7 @@
       "Export to PDF",
       "Unlimited edits"
     ],
-    "icon": "FileText"
+    "icon": "https://i.ibb.co.com/PGTG9Njq/design-tool.png"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
       "Job-specific customization",
       "One-click copy"
     ],
-    "icon": "Mail"
+    "icon": "https://i.ibb.co.com/8LdpbSWv/operation.png"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
       "SEO optimization",
       "Dark mode"
     ],
-    "icon": "Globe"
+    "icon": "https://i.ibb.co.com/XZBsgybv/portfolio.png"
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
       "Behavioral questions",
       "Performance reports"
     ],
-    "icon": "MessageCircle"
+    "icon": "https://i.ibb.co.com/vCdPR0P5/social-media.png"
   },
   {
     "id": 5,
@@ -77,7 +77,7 @@
       "Keyword suggestions",
       "Profile scoring"
     ],
-    "icon": "Linkedin"
+    "icon": "https://i.ibb.co.com/Kz6BzFnX/writing-2327400-1.png"
   },
   {
     "id": 6,
@@ -93,6 +93,6 @@
       "Priority support",
       "Free updates"
     ],
-    "icon": "Briefcase"
+    "icon": "https://i.ibb.co.com/PGTG9Njq/design-tool.png"
   }
 ]

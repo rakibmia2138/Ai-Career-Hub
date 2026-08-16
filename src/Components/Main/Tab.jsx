@@ -1,5 +1,4 @@
-
-const Tab = ({ count, activeTab, setActiveTab }) => {
+const Tab = ({ cartItems, setActiveTab }) => {
   return (
     <div>
       <div className="text-center py-20 px-4 space-y-4">
@@ -22,7 +21,7 @@ const Tab = ({ count, activeTab, setActiveTab }) => {
             type="radio"
             name="my_tabs_1"
             className="tab rounded-full w-40"
-            aria-label={`Cart (${count})`}
+            aria-label={`Cart (${cartItems.length})`}
             onClick={() => setActiveTab("cart")}
           />
         </div>

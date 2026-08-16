@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const Main = ({ data, count, setCount, cartItems, setCartItems, activeTab, setActiveTab }) => {
+const Main = ({ data, cartItems, setCartItems, total, setTotal }) => {
   return (
     <div>
       {/* <div className="text-center py-20 px-4 space-y-4">
@@ -36,9 +36,9 @@ const Main = ({ data, count, setCount, cartItems, setCartItems, activeTab, setAc
         {data.map((product) => (
           <Card
             key={product.id}
-            count={count}
-            setCount={setCount}
             product={product}
+            total={total}
+            setTotal={setTotal}
             cartItems={cartItems}
             setCartItems={setCartItems}
           />

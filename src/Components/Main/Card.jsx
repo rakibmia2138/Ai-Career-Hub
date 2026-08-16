@@ -1,11 +1,20 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const Card = ({ product, count, setCount, cartItems, setCartItems }) => {
+const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
   return (
     <div className="card max-w-11/12 mx-auto bg-base-100 shadow-sm">
       <div className="card-body flex flex-col">
-        <div className="flex justify-end">
-          <span className="badge badge-xs badge-warning">{product.tag}</span>
+        <div className="flex justify-between items-center mb-4">
+          <img
+            src={product.icon}
+            alt={product.name}
+            className="w-10 h-10 object-contain"
+          />
+
+          <div>
+            <span className="badge badge-xs badge-warning">{product.tag}</span>
+          </div>
         </div>
         <div>
           <h2 className="text-3xl font-bold">{product.name}</h2>
@@ -36,8 +45,16 @@ const Card = ({ product, count, setCount, cartItems, setCartItems }) => {
         <div className="mt-auto">
           <button
             onClick={() => {
-              setCount(count + 1);
+              const alreadyExists = cartItems.some(
+                (item) => item.id === product.id,
+              );
+
+              if (alreadyExists) {
+                toast.warning("This product is already in your cart!");
+                return;
+              }
               setCartItems([...cartItems, product]);
+              setTotal(total + product.price);
             }}
             className="btn btn-primary btn-block rounded-full text-xl"
           >
