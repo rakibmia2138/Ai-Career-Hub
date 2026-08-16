@@ -8,6 +8,8 @@ import Stats from "./Components/Stats/Stats";
 import Cart from "./Components/Cart/Cart";
 import Tab from "./Components/Main/Tab";
 import Steps from "./Components/Steps/Steps";
+import Pricing from "./Components/Steps/Pricing";
+import CTA from "./Components/Steps/CTA";
 
 const getProducts = async () => {
   const response = await fetch("./products.json");
@@ -47,6 +49,8 @@ function App() {
         ></Cart>
       )}
       <Steps></Steps>
+      <Pricing></Pricing>
+      <CTA></CTA>
       <Footer></Footer>
     </>
   );

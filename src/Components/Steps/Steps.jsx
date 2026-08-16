@@ -2,7 +2,7 @@ import React from "react";
 
 const Steps = () => {
   return (
-    <div className="max-w-11/12 mx-auto my-20">
+    <div className="max-w-11/12 mx-auto my-5">
       <div className="text-center py-20 px-4 space-y-4">
         <h2 className="text-3xl font-bold">Get Started in 3 Steps</h2>
         <p className="text-small">
