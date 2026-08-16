@@ -1,16 +1,33 @@
-# React + Vite
+# 🚀 AI-Career_Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI-Career_Hub is a modern career development platform that provides AI-powered tools to help job seekers build professional resumes, create cover letters, prepare for interviews, and improve their overall career profile.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ⚛️ React.js
+- 🎨 Tailwind CSS
+- 🌼 DaisyUI
+- 📜 JavaScript (ES6+)
+- 🔔 React Toastify
+- 🗂️ JSON
+- 🎯 React Icons
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. 🤖 AI Career Tools
+Access useful AI-powered career tools such as resume builders, cover letter generators, interview preparation, and portfolio tools.
 
-## Expanding the ESLint configuration
+### 2. 🛒 Product & Cart System
+Browse career tools, add products to the cart, remove products, view the total price, and proceed to checkout.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. 📱 Responsive & Modern UI
+A clean, modern, and fully responsive interface designed for desktop, tablet, and mobile devices.
+
+## 📌 Project Highlights
+
+- Clean and user-friendly interface
+- Dynamic product rendering from JSON data
+- Interactive shopping cart functionality
+- Product filtering and selection
+- Toast notifications for user actions
+- Responsive design with Tailwind CSS
