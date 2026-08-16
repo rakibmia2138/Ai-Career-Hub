@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { toast } from "react-toastify";
 
 const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
+  const [added,setAdded] = useState(false);
   return (
     <div className="card max-w-11/12 mx-auto bg-base-100 shadow-sm">
       <div className="card-body flex flex-col">
@@ -52,12 +54,14 @@ const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
                 toast.warning("This product is already in your cart!");
                 return;
               }
+              setAdded(true);
               setCartItems([...cartItems, product]);
               setTotal(total + product.price);
+              toast.success("Item added to Cart");
             }}
             className="btn btn-primary btn-block rounded-full text-xl"
           >
-            Buy Now
+             {added ? "Added to Cart" : "Buy Now"}
           </button>
         </div>
       </div>
