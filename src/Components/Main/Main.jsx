@@ -1,11 +1,10 @@
 import React from "react";
 import Card from "./Card";
 
-const Main = ({data}) => {
-  console.log(data);
+const Main = ({ data, count, setCount, cartItems, setCartItems, activeTab, setActiveTab }) => {
   return (
     <div>
-      <div className="text-center py-20 px-4 space-y-4">
+      {/* <div className="text-center py-20 px-4 space-y-4">
         <h2 className="text-3xl font-bold">Premium Digital Tools</h2>
         <p>
           Choose from our curated collection of premium digital products
@@ -19,6 +18,7 @@ const Main = ({data}) => {
             font-semibold text-lg flex 
             items-center gap-3 group"
             aria-label="Products"
+            onClick={() => setActiveTab("products")}
           />
           <input
             type="radio"
@@ -26,15 +26,22 @@ const Main = ({data}) => {
             className="tab bg-white px-8 rounded-full font-semibold 
             text-lg flex items-center gap-3 
             group text-zinc-800"
-            aria-label="Cart(0)"
-            defaultChecked
+            aria-label={`Cart(${count})`}
+            onClick={() => setActiveTab("cart")}
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
         {data.map((product) => (
-          <Card key={product.id} product={product} />
+          <Card
+            key={product.id}
+            count={count}
+            setCount={setCount}
+            product={product}
+            cartItems={cartItems}
+            setCartItems={setCartItems}
+          />
         ))}
       </div>
     </div>

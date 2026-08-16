@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ product }) => {
+const Card = ({ product, count, setCount, cartItems, setCartItems }) => {
   return (
     <div className="card max-w-11/12 mx-auto bg-base-100 shadow-sm">
       <div className="card-body flex flex-col">
@@ -34,7 +34,13 @@ const Card = ({ product }) => {
           ))}
         </ul>
         <div className="mt-auto">
-          <button className="btn btn-primary btn-block rounded-full text-xl">
+          <button
+            onClick={() => {
+              setCount(count + 1);
+              setCartItems([...cartItems, product]);
+            }}
+            className="btn btn-primary btn-block rounded-full text-xl"
+          >
             Buy Now
           </button>
         </div>

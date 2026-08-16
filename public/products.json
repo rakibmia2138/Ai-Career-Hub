@@ -94,37 +94,5 @@
       "Free updates"
     ],
     "icon": "Briefcase"
-  },
-  {
-    "id": 7,
-    "name": "AI Job Tracker",
-    "description": "Organize job applications, interviews, and follow-ups in one dashboard.",
-    "price": 7,
-    "period": "monthly",
-    "tag": "Popular",
-    "tagType": "popular",
-    "features": [
-      "Application tracking",
-      "Interview reminders",
-      "Company notes",
-      "Progress analytics"
-    ],
-    "icon": "KanbanSquare"
-  },
-  {
-    "id": 8,
-    "name": "Skill Assessment Kit",
-    "description": "Test your technical and soft skills with AI-generated assessments and reports.",
-    "price": 39,
-    "period": "one-time",
-    "tag": "New",
-    "tagType": "new",
-    "features": [
-      "Coding challenges",
-      "Aptitude tests",
-      "Detailed score report",
-      "Learning recommendations"
-    ],
-    "icon": "Brain"
   }
 ]
